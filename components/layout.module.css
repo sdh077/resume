@@ -1,0 +1,10 @@
+.container {
+  max-width: 960px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
