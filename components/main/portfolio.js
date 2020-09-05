@@ -6,7 +6,7 @@ import { Fragment } from 'react';
 export default function Portfolio() {
     return (
         <PortfolioFrame>
-            <PofoTitle>My Skills</PofoTitle>
+            <PofoTitle>Image</PofoTitle>
             <PofoFilter></PofoFilter>
         </PortfolioFrame>  
     )

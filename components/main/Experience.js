@@ -8,7 +8,7 @@ export default function Experience() {
     {
         title: '플레이오토',
         date: '2019~2020',
-        link: ['https://app.playauto.io/'],
+        link: 'https://app.playauto.io/',
         stack: 'node.js, C#, php, angular',
         contents: `Playauto 2.0 서비스 쇼핑몰 유지 보수 및 연동 개발
         `
@@ -17,20 +17,20 @@ export default function Experience() {
         title: '한동대 디자인과 졸업전시 사이트',
         date: '2018',
         stack: 'mysql, Angular, node, express.js',
-        link: ['http://hgudegree.cafe24app.com/'],
-        contents: 'Worked as part of a multi-disciplinary team, carrying out ad-hoc tasks as requested by the IT Manager. Had a specific brief to ensure the websites build for customer’s precisely matched their requirements.developers and marketers.'
+        link: 'http://hgudegree.cafe24app.com/',
+        contents: '한동대 디자인학과 졸업생들의 졸업 과제를 요약해서 보여주는 웹 사이트'
     },
     {
         title: '장덕한방병원 자가진단',
         date: '2016',
-        link: ['https://s.jangdeuk.com/include/self_test01.html','https://s.jangdeuk.com/include/footTest.php?landing=homepc'],
+        link:  'https://s.jangdeuk.com/include/footTest.php?landing=homepc',
         stack: 'php, mysql',
         contents: '장덕 한방병원의 자가진단을 통해 고객의 상태를 분석하고 상담 예약 시스템'
     },{
         title: '이츠엠',
         date: '2016~2017',
         stack: 'mysql, Angular, node, express.js',
-        link: ['http://point.pohang.go.kr/'],
+        link: 'http://point.pohang.go.kr/',
         contents: `포항포인트 - 포항포인트는 포항시가 제공하는 '포항시 포인트' 브랜드를 사용하는 멤버십서비스`
     },
         {
@@ -87,7 +87,7 @@ const TimelineBar = styled.div`
     background-color: black;
     left: 50%;
     top: 45px;
-    height: 445px
+    height: 455px
 `
 function TimelineDirection ({item, direction}) {
     return(
@@ -95,10 +95,17 @@ function TimelineDirection ({item, direction}) {
             <div className='timeline'>
                 <div className='timePoint'/>
                 <div className='tlItem'>
-                    <div className='tlTitle'>{item.title}</div>
+                    <div className='tlTitle'>
+                        {item.title}
+                        {item.link&&<a href={item.link}>
+                            <i className="fa fa-link"></i>           
+                        </a>}
+                    </div>
+                    
                     <div className='tlContents'>{item.date}</div>
                     <div className='tlContents'>{item.stack}</div>
                     <div className='tlContents'>{item.contents}</div>
+                    
                 </div>
                 <div className='tlArrow'/>
             </div>

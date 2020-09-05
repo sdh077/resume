@@ -20,16 +20,16 @@ export default function MySkill() {
     const mySkills = [
         {
             title: 'Node.js',
-            percent: 75
+            percent: 85
         },{
             title: 'Angular',
             percent: 70
         },{
             title: 'React',
-            percent: 40
+            percent: 60
         },{
             title: 'Html & Css',
-            percent: 70
+            percent: 75
         }
     ]
     return (
@@ -44,6 +44,7 @@ export default function MySkill() {
                     </Bar>
                 </SkillItem>
                 ))}
+                <SkillList/>
             </SkillBox>
         </SkillFrame>   
     )
@@ -63,9 +64,26 @@ const SkillItem = styled.div`
     margin-right: 7%;
     margin-bottom: 30px;
 `
+
+const SkillItemSmall = styled.div`
+    width: 20%;
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 10px;
+`
 const Bar = styled.div`
     height: 5px;
     background-color: ${theme.colors.major};
     opacity: 0.2;
     position: relative;
 `
+const SkillList = () => {
+    const list =['mysql','AWS', 'C#','AngularJs','php','Next.js']
+    return (
+        <div>
+            {list.map(i => (
+                <SkillItemSmall key={i}>{i}</SkillItemSmall>
+            ))}
+        </div>
+    )
+}
