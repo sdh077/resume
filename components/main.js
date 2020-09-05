@@ -20,11 +20,10 @@ export default function Main() {
                 <br />
                 <MySkill/>
                 <br />
-                <Portfolio/>
-                <br/>
                 <Experience/>
                 <br/>
                 <Toy />
+                <br/>
             </MainSection>
         </MainBody>
     )
