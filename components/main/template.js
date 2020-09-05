@@ -9,9 +9,9 @@ export default function temp() {
         </>
     )
 }
-const PortfolioFrame = styled.div`
+const tempFrame = styled.div`
 
 `
-const PofoTitle = styled.h2`
+const tempTitle = styled.h2`
     text-align: center;
 `
