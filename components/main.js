@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Head from 'next/head'
 import theme from "../styles/theme";
 import Portfolio from './main/portfolio';
-import Experience from './main/experience';
+import Experience from './main/Experience';
 import Toy from './main/toy';
 import Todo from './main/todo';
 export default function Main() {
