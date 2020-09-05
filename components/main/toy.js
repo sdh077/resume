@@ -73,7 +73,7 @@ function ToyContent({toggle, contents, link, goal}) {
             <div>설명 : {contents}</div>
             <div>목적 : {goal}</div>
             <div>
-                {link && <Link href={link}>구경가기</Link>}
+                {link && <Link href={link}><a>구경가기</a></Link>}
             </div>
         </div>
         <style jsx>
