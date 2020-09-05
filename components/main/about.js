@@ -56,8 +56,16 @@ export default function About({ navList, setChoice, choice }) {
                 </AboutContent>
             </AboutIntro>
             <AboutSns>
-                    <AboutSnsItem><i className="fa fa-facebook-f"></i> </AboutSnsItem>
-                    <AboutSnsItem><i className="fa fa-instagram"></i> </AboutSnsItem>
+                    <AboutSnsItem>
+                        <Link href='https://www.facebook.com/profile.php?id=100003287681948'>
+                            <a><i className="fa fa-facebook-f"></i> </a>
+                        </Link>
+                    </AboutSnsItem>
+                    <AboutSnsItem>
+                        <Link href='https://www.instagram.com/sssssssdaeho/'>
+                            <a><i className="fa fa-instagram"></i> </a>
+                        </Link>
+                    </AboutSnsItem>
                 <style jsx>
                 {`
                     .white {
@@ -115,6 +123,8 @@ const AboutSns = styled.div`
 // https://fontawesome.com/icons?from=io
 const AboutSnsItem = styled.span`
     width: 20px;
-    color: white;
     margin-left: 20px;
+    a {
+        color: white;
+    }
 `
